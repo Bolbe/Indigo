@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scene>
+	<renderer_settings>
+		<uid>1</uid>
+		<name>Render Settings</name>
+		<bidirectional>true</bidirectional>
+		<verbose>false</verbose>
+		<write_aperture_preview>false</write_aperture_preview>
+		<save_tonemapped_exr>false</save_tonemapped_exr>
+		<save_untonemapped_exr>false</save_untonemapped_exr>
+		<save_igi>false</save_igi>
+		<save_png>true</save_png>
+		<auto_choose_num_threads>true</auto_choose_num_threads>
+		<cache_trees>true</cache_trees>
+		<metropolis>true</metropolis>
+		<logging>true</logging>
+		<watermark>false</watermark>
+		<aperture_diffraction>false</aperture_diffraction>
+		<post_process_diffraction>true</post_process_diffraction>
+		<material_id_tracer>false</material_id_tracer>
+		<render_foreground_alpha>false</render_foreground_alpha>
+		<depth_pass>false</depth_pass>
+		<shadow_pass>false</shadow_pass>
+		<info_overlay>false</info_overlay>
+		<wait_for_slave_frames_on_stop>false</wait_for_slave_frames_on_stop>
+		<close_gui_on_halt>false</close_gui_on_halt>
+		<save_images_on_close>false</save_images_on_close>
+		<glass_acceleration>false</glass_acceleration>
+		<vignetting>true</vignetting>
+		<merging>true</merging>
+		<dithering>true</dithering>
+		<version_three_point_four_compat_env_sphere>false</version_three_point_four_compat_env_sphere>
+		<max_depth>10000</max_depth>
+		<max_num_consec_rejections>1000</max_num_consec_rejections>
+		<num_threads>1</num_threads>
+		<width>2500</width>
+		<height>2500</height>
+		<super_sample_factor>3</super_sample_factor>
+		<bih_tri_threshold>1100000</bih_tri_threshold>
+		<batched>false</batched>
+		<gpu>false</gpu>
+		<halt_time>-1</halt_time>
+		<halt_samples_per_pixel>-1</halt_samples_per_pixel>
+		<frame_upload_period>40</frame_upload_period>
+		<large_mutation_prob>0.4000000059604645</large_mutation_prob>
+		<max_change>0.009999999776482582</max_change>
+		<image_save_period>60</image_save_period>
+		<gpu_path_tracing>false</gpu_path_tracing>
+		<hybrid>false</hybrid>
+		<splat_filter>
+			<fastbox />
+		</splat_filter>
+		<downsize_filter>
+			<mn_cubic>
+				<blur>1</blur>
+				<ring>0</ring>
+				<radius>1.600000023841858</radius>
+			</mn_cubic>
+		</downsize_filter>
+		<white_point>
+			0.34842 0.35161			
+		</white_point>
+	</renderer_settings>
+
+	<camera>
+		<uid>2</uid>
+		<name>Camera</name>
+		<aperture_radius>0.0011363635686310854</aperture_radius>
+		<focus_distance>2</focus_distance>
+		<sensor_width>0.036000002175569534</sensor_width>
+		<lens_sensor_dist>0.04999999701976776</lens_sensor_dist>
+		<exposure_duration>0.255208283662796</exposure_duration>
+		<lens_shift_up_distance>0</lens_shift_up_distance>
+		<lens_shift_right_distance>0</lens_shift_right_distance>
+	<autofocus />
+		<aperture_shape>
+			<circular />
+		</aperture_shape>
+		<keyframe>
+			<time>0</time>
+			<pos>3.5038392543792725 1.7387540340423584 1.497815489768982</pos>
+			<rotation_quaternion>
+				<axis>0 0 1</axis>
+				<angle>0</angle>
+			</rotation_quaternion>
+		</keyframe>
+		<up>-0.13246656954288483 -0.06414766609668732 0.9891095757484436</up>
+		<forwards>-0.8902223706245422 -0.43109381198883057 -0.14718124270439148</forwards>
+		<camera_type>thin-lens-perspective</camera_type>
+	</camera>
+
+	<tonemapping>
+		<uid>3</uid>
+		<name>Tone Mapping</name>
+		<camera>
+			<response_function_path>data/camera_response_functions/dscs315.txt</response_function_path>
+			<film_iso>100</film_iso>
+			<ev_adjust>-4.800000190734863</ev_adjust>
+		</camera>
+	</tonemapping>
+
+	<background_settings>
+		<uid>4</uid>
+		<name>Background Settings</name>
+		<emission_scale>
+			<measure>luminous_emittance</measure>
+			<value>299000</value>
+			<material_uid>4294967295</material_uid>
+		</emission_scale>
+		<background_material>
+			<material>
+				<name />
+				<diffuse>
+					<texture>
+						<path>./ambient_Images/IndigoImage_0.jpg</path>
+						<a>0</a>
+						<b>1</b>
+						<c>0</c>
+						<uv_set_index>0</uv_set_index>
+						<exponent>2.200000047683716</exponent>
+						<tex_coord_generation>
+							<spherical>
+								<rotation>
+										<axis_rotation>
+											<axis>0 0 1</axis>
+											<angle>-1.0471974611282349</angle>
+										</axis_rotation>
+								</rotation>
+							</spherical>
+						</tex_coord_generation>
+						<smooth>false</smooth>
+					</texture>
+					<base_emission>
+						<constant>
+							<regular_tabulated>
+								<start_wavelength>3.7999998880877683e-7</start_wavelength>
+								<end_wavelength>7.799999934832158e-7</end_wavelength>
+								<num_values>83</num_values>
+								<values>0.5 0.5 49.97549819946289 52.311798095703125 54.64820098876953 68.70149993896484 82.75489807128906 87.12039947509766 91.48600006103516 92.45890045166016 93.43180084228516 90.05699920654297 86.68229675292969 95.77359771728516 104.86499786376953 110.93599700927734 117.00800323486328 117.41000366210938 117.81199645996094 116.33699798583984 114.86100006103516 115.39199829101562 115.9229965209961 112.36699676513672 108.81099700927734 109.08300018310547 109.35399627685547 108.5780029296875 107.802001953125 106.2959976196289 104.79000091552734 106.23999786376953 107.68900299072266 106.0469970703125 104.40499877929688 104.22599792480469 104.0459976196289 102.02300262451172 100 98.16709899902344 96.33419799804688 96.06109619140625 95.78800201416016 92.23680114746094 88.68560028076172 89.34590148925781 90.0062026977539 89.80259704589844 89.5990982055664 88.6489028930664 87.69869995117188 85.49359893798828 83.2885971069336 83.493896484375 83.69920349121094 81.86299896240234 80.02680206298828 80.12069702148438 80.214599609375 81.24620056152344 82.27780151367188 80.28099822998047 78.2842025756836 74.00270080566406 69.72129821777344 70.66519927978516 71.60910034179688 72.97899627685547 74.3489990234375 67.97650146484375 61.604000091552734 65.74479675292969 69.8855972290039 72.48629760742188 75.08699798583984 69.33979797363281 63.59270095825195 55.005401611328125 46.4182014465332 56.61180114746094 66.8053970336914 65.09410095214844 63.3828010559082 </values>
+							</regular_tabulated>
+						</constant>
+					</base_emission>
+					<emission>
+						<texture>
+							<texture_index>0</texture_index>
+						</texture>
+					</emission>
+					<random_triangle_colours>false</random_triangle_colours>
+					<layer>0</layer>
+				</diffuse>
+			</material>
+		</background_material>
+	</background_settings>
+
+	<metadata>
+		<uid>5</uid>
+		<name>Metadata</name>
+		<exporter>iclone</exporter>
+		<author />
+		<description />
+		<created_date />
+		<platform />
+		<exporter_specific />
+	</metadata>
+
+	<material>
+		<uid>6</uid>
+		<name />
+		<diffuse>
+			<texture>
+				<path>./ambient_Images/IndigoImage_0.jpg</path>
+				<a>0</a>
+				<b>1</b>
+				<c>0</c>
+				<uv_set_index>0</uv_set_index>
+				<exponent>2.200000047683716</exponent>
+				<tex_coord_generation>
+					<spherical>
+						<rotation>
+								<axis_rotation>
+									<axis>0 0 1</axis>
+									<angle>-1.0471974611282349</angle>
+								</axis_rotation>
+						</rotation>
+					</spherical>
+				</tex_coord_generation>
+				<smooth>false</smooth>
+			</texture>
+			<base_emission>
+				<constant>
+					<regular_tabulated>
+						<start_wavelength>3.7999998880877683e-7</start_wavelength>
+						<end_wavelength>7.799999934832158e-7</end_wavelength>
+						<num_values>83</num_values>
+						<values>0.5 0.5 49.97549819946289 52.311798095703125 54.64820098876953 68.70149993896484 82.75489807128906 87.12039947509766 91.48600006103516 92.45890045166016 93.43180084228516 90.05699920654297 86.68229675292969 95.77359771728516 104.86499786376953 110.93599700927734 117.00800323486328 117.41000366210938 117.81199645996094 116.33699798583984 114.86100006103516 115.39199829101562 115.9229965209961 112.36699676513672 108.81099700927734 109.08300018310547 109.35399627685547 108.5780029296875 107.802001953125 106.2959976196289 104.79000091552734 106.23999786376953 107.68900299072266 106.0469970703125 104.40499877929688 104.22599792480469 104.0459976196289 102.02300262451172 100 98.16709899902344 96.33419799804688 96.06109619140625 95.78800201416016 92.23680114746094 88.68560028076172 89.34590148925781 90.0062026977539 89.80259704589844 89.5990982055664 88.6489028930664 87.69869995117188 85.49359893798828 83.2885971069336 83.493896484375 83.69920349121094 81.86299896240234 80.02680206298828 80.12069702148438 80.214599609375 81.24620056152344 82.27780151367188 80.28099822998047 78.2842025756836 74.00270080566406 69.72129821777344 70.66519927978516 71.60910034179688 72.97899627685547 74.3489990234375 67.97650146484375 61.604000091552734 65.74479675292969 69.8855972290039 72.48629760742188 75.08699798583984 69.33979797363281 63.59270095825195 55.005401611328125 46.4182014465332 56.61180114746094 66.8053970336914 65.09410095214844 63.3828010559082 </values>
+					</regular_tabulated>
+				</constant>
+			</base_emission>
+			<emission>
+				<texture>
+					<texture_index>0</texture_index>
+				</texture>
+			</emission>
+			<random_triangle_colours>false</random_triangle_colours>
+			<layer>0</layer>
+		</diffuse>
+	</material>
+</scene>

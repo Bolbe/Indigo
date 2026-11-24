@@ -1,0 +1,7 @@
+{
+    "indigo": "C:/Programs/Indigo4RT/indigo_console.exe",
+    "png_folder": "C:/Users/frede/Documents/batch/png",
+    "image_save_period": 300,
+    "halt": 10000,
+    "haltspp": 500
+}

@@ -1,0 +1,1 @@
+python C:\Users\frede\Documents\batch\run_indigo.py "C:\Users\frede\Documents\batch"
